@@ -7,7 +7,7 @@
 **Período**: Noturno
 
 
-**PROJETO EM EMPREENDEDORISMO**
+**PROJETO E MODELAGEM DE SISTEMAS DE SOFTWARE**
 
 **Professor**: Prof. Daniel Ferreira de Barros Junior
 
