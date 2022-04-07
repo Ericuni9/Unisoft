@@ -25,7 +25,6 @@
 |  João Paulo Caldeira de Mello | 3022101591 |
 |  Larissa Pina Pereira | 3021203696 |
 |  Nathalia Marini Chiquitano | 3122101006 |
-|  Patrick Wesley Fernandes Carneiro | 421200052 |
 |  Ryan De Souza Tomaz | 3021106499 |
 
 
