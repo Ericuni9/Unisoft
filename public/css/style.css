@@ -1,0 +1,1009 @@
+/*FONTE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*BOTÃO MENU*/
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #1c3ccd;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*NAVBAR*/
+
+.navbar {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #a0a0a0;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #1c3ccd;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.nav-item {
+    padding: 10px 10px;
+}
+
+/*BOTÃO LOGIN/CADASTRO*/
+
+.nav .btn-primary {
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+    font-size: x-small;
+}
+
+.nav .btn-primary:hover {
+    background-color: #1c3ccd;
+    border: solid 1px #1c3ccd;
+    transition: all 0.3s ease-in;
+}
+
+.nav .btn-primary:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/*MODAL LOGIN*/
+
+.modal-title {
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+
+.modal-body .btn-primary {
+    width: 90%;
+    margin-top: 10px;
+    background-color: #1c3ccd;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 1px;
+}
+
+.btnsub,
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer .btn-primary {
+    width: 100%;
+    font-weight: bolder;
+    height: 60px;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 1px;
+}
+
+.modal-footer .btn-primary:hover {
+    box-shadow: 0px 4px 15px 0px black;
+}
+
+.modal-body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*BANNER*/
+
+.carousel-inner img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+.banner1 .carousel-inner h1 {
+    font-family: 'Patua One', cursive;
+    font-weight: bolder;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    letter-spacing: 1px;
+}
+
+.banner1 .carousel-inner p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    letter-spacing: 0.6px;
+}
+
+.banner1 .carousel-inner .btn {
+    font-family: 'Patua One', cursive;
+    background-color: transparent;
+    border: solid 1px white;
+    box-shadow: 0px 6px 15px 7px black;
+}
+
+.banner1 .carousel-inner .btn:hover {
+    background-color: #1c3ccd;
+    border: solid 1px #1c3ccd;
+}
+
+/*QUEM SOMOS*/
+
+#empresa {
+    background-color: black;
+}
+
+.titulo {
+    margin-top: 60px;
+    margin-bottom: 45px;
+    font-family: 'Patua One', cursive;
+    color: white;
+}
+
+#empresa p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.teste {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*ESSENCIA*/
+
+.titulo-essencia {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Patua One', cursive;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    color: black;
+}
+
+#essencia p {
+    font-family: 'Poppins', sans-serif;
+}
+
+#essencia .card-deck {
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+
+#essencia .card {
+    background-color: black;
+}
+
+.card-img-top {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+#essencia .card-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Patua One', cursive;
+}
+
+#essencia .scrollcard {
+    height: 200px !important;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: scroll !important;
+}
+
+#essencia .scrollcard::-webkit-scrollbar {
+    border-radius: 8px !important;
+    background: #161616 !important;
+}
+
+#essencia .scrollcard::-webkit-scrollbar-thumb {
+    background: #1c3ccd !important;
+    border-radius: 6px !important;
+}
+
+/*PARCEIROS E CLIENTES*/
+
+#parceiros {
+    background-color: black;
+}
+
+.titulo-parceiros {
+    text-align: center;
+    font-family: 'Patua One', cursive;
+    padding-top: 60px;
+    margin-bottom: 80px;
+    color: white;
+}
+
+#parceiros h3 {
+    font-family: 'Patua One', cursive;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.text-parceiros {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.imagem-parceiro {
+    margin-bottom: 40px;
+}
+
+.img-thumbnail {
+    margin-right: 30px;
+    width: 120px;
+    height: 120px;
+    display: inline;
+    transition: 0.5s;
+    padding: 0 !important;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.espaço {
+    padding-bottom: 60px;
+}
+
+/*TRABALHE CONOSCO*/
+
+.linha {
+    height: 250px;
+}
+
+.text-trabalhe {
+    font-family: 'Poppins', sans-serif;
+    color: #1c3ccd;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.text-trabalhe span {
+    font-style: oblique;
+    font-size: 27px;
+}
+
+.trabalhebtn {
+    background-color: #1c3ccd;
+    border: solid 2px #1c3ccd;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    height: 80px;
+}
+
+.trabalhebtn:hover {
+    background-color: transparent;
+    color: #1c3ccd;
+    border: solid 2px #1c3ccd;
+    transition: all 0.3s ease-in;
+}
+
+/*BANNER PRODUTOS*/
+
+#produtos1 .carousel-caption {
+    text-align: left;
+    left: 3%;
+}
+
+#produtos1 .btn-primary {
+    background-color: transparent;
+    border: solid 2px white;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 1px;
+}
+
+#produtos1 .btn-primary:hover {
+    background-color: #1c3ccd;
+    border: solid 2px #1c3ccd;
+}
+
+#produtos1 .carousel-inner h1 {
+    font-family: 'Patua One', cursive;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#produtos1 .carousel-inner p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    letter-spacing: 0.6px;
+    margin-bottom: 35px;
+}
+
+/*CARD DE PRODUTOS*/
+
+#produtoscard {
+    margin: 60px 40px
+}
+
+#produtoscard .card {
+    transition: all 0.3s ease-in;
+}
+
+#produtoscard .card-body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#produtoscard .card-title {
+    font-family: 'Patua One', cursive;
+}
+
+#produtoscard .card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.producard {
+    font-weight: bolder;
+    font-size: large;
+    color: #1c3ccd;
+    font-family: 'Patua One', cursive;
+    text-decoration: none !important;
+}
+
+.producard i {
+    color: #1c3ccd;
+}
+
+/*MODAL DE PRODUTOS*/
+
+#modalprod .btn {
+    background-color: #1c3ccd;
+    width: 300px;
+    font-weight: bolder;
+    height: 60px;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 2px;
+}
+
+#modalprod .btn:hover {
+    box-shadow: 0px 4px 15px 0px black;
+}
+
+#modalprod .modal-footer {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+#modalprod h3 {
+    font-family: 'Patua One', cursive;
+    text-align: center;
+}
+
+#modalprod p {
+    font-family: 'Poppins', sans-serif;
+}
+
+#modalprod li {
+    font-family: 'Poppins', sans-serif;
+}
+
+#modalprod ol {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*SERVIÇOS*/
+
+#servicos {
+    background-color: black;
+}
+
+#servicos .pp {
+    margin-top: 14%;
+}
+
+#servicos .pp h1,
+.imgserv h2 {
+    font-family: 'Patua One', cursive;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#servicos .pp p,
+.imgserv p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.imgserv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imgserv img {
+    margin-bottom: 25px;
+}
+
+.tipserv {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.tipserv img {
+    padding: 25px;
+}
+
+.tipserv img:hover {
+    transform: scale(1.1);
+}
+
+.tipserv .servsubtt {
+    font-family: 'Patua One', cursive;
+    color: white;
+    border: none !important;
+}
+
+.tipserv p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.tipserv .btn-outline-primary {
+    display: none;
+}
+
+/*MODAL DOS SERVIÇOS*/
+
+.modalservcos h3 {
+    font-family: 'Patua One', cursive;
+    text-align: center;
+}
+
+.modalservcos p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.modalservcos .btn {
+    background-color: #1c3ccd;
+    width: 300px;
+    font-weight: bolder;
+    height: 60px;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 2px;
+}
+
+.modalservcos .btn:hover {
+    box-shadow: 0px 4px 15px 0px black;
+}
+
+.modalservcos .modal-footer {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+/*LGPD  */
+
+.introducao {
+    margin: 120px 0;
+}
+
+.introducao h2 {
+    font-family: 'Patua One', cursive;
+}
+
+.introducao h2 span {
+    font-weight: bolder;
+}
+
+.introducao p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardlgpd {
+    margin: 0 0 160px 0;
+}
+
+.cardlgpd p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulolgpd {
+    border-bottom: solid 2px #1c3ccd;
+    width: 65%;
+    font-family: 'Patua One', cursive;
+}
+
+.titulolgpd1 {
+    border-bottom: solid 2px #1c3ccd;
+    width: 40%;
+    font-family: 'Patua One', cursive;
+}
+
+#backlgpd {
+    background-color: #1c3ccd;
+}
+
+#backlgpd .container .fimlgpd h1 {
+    font-family: 'Patua One', cursive;
+    color: white;
+    padding-top: 45px;
+}
+
+.fimlgpd p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fimlgpd .btn {
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
+}
+
+.fimlgpd .btn:hover {
+    font-weight: bolder;
+    background-color: white;
+    color: #1c3ccd;
+    border: solid 2px white;
+    transition: all 0.3s ease-in;
+}
+
+.bannerlgpd h1 {
+    display: none;
+    font-family: 'Patua One', cursive;
+}
+
+.bannerlgpd p {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.media img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/*CONTATO*/
+
+#contato {
+    background-color: black;
+}
+
+.cabeca {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#contato h1 {
+    margin-bottom: 100px;
+    font-family: 'Patua One', cursive;
+    color: white;
+}
+
+#contato h3 {
+    margin-bottom: 30px;
+    font-family: 'Patua One', cursive;
+    color: white;
+    text-align: start;
+}
+
+#contato p {
+    margin-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: start;
+}
+
+#contato label {
+    color: white;
+    font-family: 'Patua One', cursive;
+}
+
+.form-check {
+    color: white;
+}
+
+#contato .formm {
+    margin: 50px 0;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+    border: solid 2px white;
+    min-width: 300px;
+    font-weight: bolder;
+    height: 70px;
+    transition: 0.3s;
+}
+
+#contato .formm:hover {
+    background-color: #1c3ccd;
+    color: white;
+    border: solid 2px #1c3ccd;
+}
+
+/*FOOTER*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding: 0px !important;
+}
+
+.footer {
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.infpp {
+    border-bottom: solid 1px white;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.infpp .col-md-auto {
+    margin-bottom: 70px;
+    padding: 0 30px;
+}
+
+.infpp .col-md-auto img {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.infpp .p1 {
+    color: white;
+    font-weight: bolder;
+    font-size: x-small;
+}
+
+.endd {
+    color: white;
+    font-size: xx-small;
+}
+
+.opop {
+    border-right: solid 1px white;
+}
+
+.footer-col {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1c3ccd;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+/*MIDIA SOCIAL*/
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #1c3ccd;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*MEDIA*/
+
+@media (max-width: 769px) {
+    .nav {
+        display: block;
+    }
+
+    #trabalhe {
+        display: none;
+    }
+
+    #essencia .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    #essencia .card:hover {
+        transform: scale(1.0);
+    }
+
+    #produtos1 .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tipserv .col {
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+
+    .tipserv .btn-outline-primary {
+        display: inline;
+        margin: 20px 0 28px 0;
+    }
+
+    .cardlgpd .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cardlgpd {
+        margin: 0 0 25px 0;
+    }
+
+    .introducao {
+        margin: 100px 0;
+    }
+
+    .tipserv .col {
+        margin: 0px;
+    }
+
+    #servicos .col-6 img {
+        margin-top: 50%;
+    }
+
+    .imgh {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .infpp {
+        text-align: center;
+    }
+
+    .opop {
+        flex: 0 0 100%;
+        border-right: none;
+        border-bottom: solid 1px white;
+        max-width: 100%;
+    }
+
+    .enddd {
+        padding-bottom: 45px;
+    }
+
+    .opop1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 427px) {
+    .qms {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .qmss {
+        display: none;
+    }
+
+    #essencia .card:hover {
+        transform: scale(1.0);
+    }
+
+    .img-thumbnail {
+        margin-bottom: 20px;
+    }
+
+    #trabalhe {
+        display: none;
+    }
+
+    .carousel-caption {
+        height: 75%;
+    }
+
+    #empresa .titulo {
+        text-align: center;
+    }
+
+    .lala {
+        text-align: center;
+    }
+
+    .lala h3 {
+        margin-bottom: 30px;
+    }
+
+    #essencia .card p {
+        font-size: medium;
+    }
+
+    #servicos .pp,
+    #servicos .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #servicos h1 {
+        text-align: center;
+    }
+
+    .tipserv .col {
+        margin-bottom: 85px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .imgserv p {
+        text-align: justify;
+    }
+
+    .tipserv .servsubtt {
+        font-size: medium;
+    }
+
+    .tipserv .btn-outline-primary {
+        display: none;
+    }
+
+    .tipserv img {
+        object-fit: cover;
+    }
+
+    .nav {
+        margin: auto;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .media img {
+        display: none;
+    }
+
+    .bannerlgpd img {
+        display: none;
+    }
+
+    .bannerlgpd h1,
+    .bannerlgpd p {
+        display: block;
+    }
+
+    .infpp {
+        display: block;
+    }
+
+    .opop {
+        border-right: none;
+        border-bottom: solid 1px white;
+    }
+
+    #produtos1 h1 {
+        font-size: x-large;
+    }
+
+    #produtos1 p {
+        font-size: x-small;
+    }
+
+    .titi {
+        font-size: xx-large;
+    }
+
+    .pipi {
+        font-size: x-small;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-col h4::before {
+        display: none !important;
+    }
+
+    h4 {
+        border-bottom: solid 2px #1296f3;
+        width: 40%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-col {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+}
