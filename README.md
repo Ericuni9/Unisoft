@@ -10,6 +10,7 @@
 **PROJETO E MODELAGEM DE SISTEMAS DE SOFTWARE**
 
 **Professor**: Prof. Daniel Ferreira de Barros Junior
+(login: daniel@unisoft.com senha: 123456) -> Conta para acessar página com produtos e serviços contratados
 
 
 ## Integrantes
