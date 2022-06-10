@@ -162,10 +162,11 @@
                                     <div class="card-body">
                                         <p class="card-text">{!! html_entity_decode(substr($servico->description, 0, strpos($servico->description, "."))) !!}</p>
                                     </div>
+
+                                    <!--SERVIÇOS WHATSAPP @NATH-->
                                 <div class="card-footer d-flex justify-content-center">
                                     <a href="https://wa.me/+5511974551685?text=Olá!%20Meu%20nome%20é%20...%20da%20empresa%20...%20e%20gostaria%20de%20suporte%20no%20serviço%20...%20por%20favor!" target="_blank"><button type="button" class="d-inline btn btn-primary btn-sm suport mr-3"><i class="fa-solid fa-headset"></i> Suporte</button></a>
-                                    <button type="button" class="d-inline btn btn-primary btn-sm cancel"><i
-                                            class="fa-solid fa-ban"></i> Cancelar</button>
+                                    <a href="https://wa.me/+5511974551685?text=Olá!%20Meu%20nome%20é%20...%20da%20empresa%20...%20e%20gostaria%20de%20cancelar%20um%20serviço%20...%20por%20favor!" target="_blank"><button type="button" class="d-inline btn btn-primary btn-sm cancel"><i class="fa-solid fa-ban"></i> Cancelar</button></a>
                                 </div>
                             </div>
                             @empty
@@ -189,10 +190,10 @@
                                 <div class="card-body">
                                     <p class="card-text">{{ $produto->description }}</p>
                                 </div>
+                                <!--PRODUTOS WHATSAPP @NATH-->
                                 <div class="card-footer d-flex justify-content-center">
                                     <a href="https://wa.me/+5511974551685?text=Olá!%20Meu%20nome%20é%20...%20da%20empresa%20...%20e%20gostaria%20de%20suporte%20no%20produto%20...%20por%20favor!" target="_blank"><button type="button" class="d-inline btn btn-primary btn-sm suport mr-3"><i class="fa-solid fa-headset"></i> Suporte</button></a>
-                                    <button type="button" class="d-inline btn btn-primary btn-sm cancel"><i
-                                            class="fa-solid fa-ban"></i> Cancelar</button>
+                                    <a href="https://wa.me/+5511974551685?text=Olá!%20Meu%20nome%20é%20...%20da%20empresa%20...%20e%20gostaria%20de%20cancelar%20um%20produto%20...%20por%20favor!" target="_blank"><button type="button" class="d-inline btn btn-primary btn-sm cancel"><i class="fa-solid fa-ban"></i> Cancelar</button></a>
                                 </div>
                             </div>
                         </div>
